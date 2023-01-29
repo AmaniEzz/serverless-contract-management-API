@@ -82,4 +82,8 @@ Example request body:
 
 ## Run Tests
 
-To run test please un comment line 14 in `tsconfig.json` file, and add `"type": "module",` to the package.json. Then run `npm run test`
+To run test please do the following steps:
+
+1. Uncomment line 14 in `tsconfig.json` file
+2. Add `"type": "module",` to the `package.json`
+3. Run `npm run test`
