@@ -4,7 +4,7 @@ import HTTPError from "src/utils/error";
 
 import { Contract } from "../model/contract-model";
 
-export default class ContractServerice {
+export class ContractService {
   /**
    *
    * @param mapper

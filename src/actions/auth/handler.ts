@@ -1,5 +1,5 @@
-import { formatJSONResponse } from "@libs/api-gateway";
-import { middyfy } from "@libs/lambda";
+import { formatJSONResponse } from "../../libs/api-gateway";
+import { middyfy } from "../../libs/lambda";
 import { APIGatewayProxyResult } from "aws-lambda";
 import { User } from "src/model/user-model";
 import { awsPolicyService, jwtService, userService } from "src/services";
@@ -20,7 +20,7 @@ export const verifyToken = async function (event: any): Promise<any> {
   }
 };
 
-export const signUp = middyfy(async function (
+export const signUp = async function (
   event: any
 ): Promise<APIGatewayProxyResult> {
   try {
@@ -30,7 +30,7 @@ export const signUp = middyfy(async function (
   } catch (e) {
     return formatJSONResponse(e.statusCode, { error: e });
   }
-});
+};
 
 export const logIn = middyfy(async function (
   event: any
