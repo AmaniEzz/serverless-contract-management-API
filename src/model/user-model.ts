@@ -3,12 +3,12 @@ import {
   table,
   hashKey,
 } from "@aws/dynamodb-data-mapper-annotations";
-import { v4 } from "uuid";
+import { nanoid } from "nanoid";
 import * as bcrypt from "bcrypt-ts";
 
 @table("user_table")
 export class User {
-  @attribute({ defaultProvider: () => v4() })
+  @attribute({ defaultProvider: () => nanoid() })
   id: string;
 
   @attribute({ type: "String" })

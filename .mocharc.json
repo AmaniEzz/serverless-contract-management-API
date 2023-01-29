@@ -2,5 +2,9 @@
   "extension": ["ts"],
   "spec": "tests/**/*.test.ts",
   "require": "ts-node/register",
-  "recursive": true
+  "recursive": true,
+  "node-option": [
+    "experimental-specifier-resolution=node",
+    "loader=ts-node/esm"
+  ]
 }
