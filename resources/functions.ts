@@ -1,4 +1,4 @@
-import { handlerPath } from "@libs/handler-resolver";
+import { handlerPath } from "../src/libs/handler-resolver";
 
 export const verifyToken = {
   handler: `${handlerPath(__dirname)}/handlers.verifyToken`,

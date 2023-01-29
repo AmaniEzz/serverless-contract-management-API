@@ -79,3 +79,7 @@ Example request body:
 
 `GET get contract by id -`
 [http://localhost:3000/dev/contract/{id}](http://localhost:3000/dev/contract/{id})
+
+## Run Tests
+
+To run test please un comment line 14 in `tsconfig.json` file, and add `"type": "module",` to the package.json. Then run `npm run test`

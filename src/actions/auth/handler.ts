@@ -20,7 +20,7 @@ export const verifyToken = async function (event: any): Promise<any> {
   }
 };
 
-export const signUp = async function (
+export const signUp = middyfy(async function (
   event: any
 ): Promise<APIGatewayProxyResult> {
   try {
@@ -30,7 +30,7 @@ export const signUp = async function (
   } catch (e) {
     return formatJSONResponse(e.statusCode, { error: e });
   }
-};
+});
 
 export const logIn = middyfy(async function (
   event: any

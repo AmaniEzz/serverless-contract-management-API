@@ -1,6 +1,6 @@
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
-import { formatJSONResponse } from "@libs/api-gateway";
-import { middyfy } from "@libs/lambda";
+import { formatJSONResponse } from "../../libs/api-gateway";
+import { middyfy } from "../../libs/lambda";
 import { contractService } from "../../services";
 import { Contract } from "src/model/contract-model";
 
@@ -46,5 +46,3 @@ export const getContract = middyfy(
     }
   }
 );
-
-
