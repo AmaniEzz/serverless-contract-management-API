@@ -1,6 +1,6 @@
 import { User } from "src/model/user-model";
 
-type PolicyDocument = {
+export type PolicyDocument = {
   Version: string;
   Statement: {
     Action: string;
@@ -9,7 +9,7 @@ type PolicyDocument = {
   }[];
 };
 
-type AWSAuthResponse = {
+export type AWSAuthResponse = {
   principalId: string | undefined;
   policyDocument: PolicyDocument;
 };
@@ -45,7 +45,8 @@ export class AwsPolicyGeneratorService {
   /**
    * A function that return a auth reponse to be used by the lambda authorizer
    * @param principal
-   * @param methodArn
+   * @param methodArn (The methodArn is the ARN of the incoming method request and is populated by API Gateway in accordance with the Lambda authorizer configuration.
+)
    * @returns AWSAuthResponse
    */
   generateAuthResponse(principal: User, methodArn: string): AWSAuthResponse {
