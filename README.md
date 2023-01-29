@@ -80,10 +80,13 @@ Example request body:
 `GET get contract by id -`
 [http://localhost:3000/dev/contract/{id}](http://localhost:3000/dev/contract/{id})
 
-## Run Tests
+## Run Unit Tests
 
 To run test please do the following steps:
 
 1. Uncomment line 14 in `tsconfig.json` file
 2. Add `"type": "module",` to the `package.json`
 3. Run `npm run test`
+
+> > I added only few unit tests due to time constrains and the simplicty of the project.
+> > Future work is to add more tests and even integration tests.
