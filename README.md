@@ -12,21 +12,25 @@ You will need the following packages installed locally,
 
 ## Local Development
 
-First, run the following commands
+First, run the following commands in the same order
 
 ```bash
 npm install -g serverless
 npm install
-serverless dynamodb install
+npm run dynamodb:install
 ```
 
 To start lambda functions and DynamoDB locally in the offline mode use the following command:
 
-`npm run dev:start`
+`npm run sls:offline`
 
 To deploy the lambda functions to AWS run the following command:
 
 `npm run deploy`
+
+To remove all resources created on AWS run the following command:
+
+`npm run remove`
 
 #### Local Endpoints
 
