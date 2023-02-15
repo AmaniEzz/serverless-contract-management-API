@@ -32,9 +32,11 @@ To remove all resources created on AWS run the following command:
 
 `npm run remove`
 
-#### Local Endpoints
+## Run in Postman
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/12743195-0a493b19-c466-49bd-932a-dac00eca2bfe?action=collection%2Ffork&collection-url=entityId%3D12743195-0a493b19-c466-49bd-932a-dac00eca2bfe%26entityType%3Dcollection%26workspaceId%3D9f27b61e-2dd3-4e6b-ae03-e5d56be30c1f)
+
+#### Local Endpoints
 
 ##### Authentication
 
