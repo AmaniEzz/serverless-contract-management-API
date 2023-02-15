@@ -77,7 +77,7 @@ functions:
     events:
       - http:
           method: get
-          path: contract
+          path: contracts
           cors: true
           authorizer:
             name: verifyToken
@@ -88,7 +88,7 @@ functions:
     handler: src/actions/index.createContract
     events:
       - http:
-          path: contract/create
+          path: contracts/create
           method: post
           cors: true
           authorizer:
@@ -100,7 +100,7 @@ functions:
     handler: src/actions/index.getContract
     events:
       - http:
-          path: contract/{id}
+          path: contracts/{id}
           method: get
           cors: true
           authorizer:

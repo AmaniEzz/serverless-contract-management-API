@@ -62,7 +62,7 @@ Example request body:
 ##### Contract Managment
 
 `POST create contract -`
-[http://localhost:3000/dev/contract/create](http://localhost:3000/dev/task/create)
+[http://localhost:3000/dev/contracts/create](http://localhost:3000/dev/task/create)
 
 Example request body:
 
@@ -75,10 +75,10 @@ Example request body:
 ```
 
 `GET get contracts ids -`
-[http://localhost:3000/dev/contract](http://localhost:3000/dev/contract)
+[http://localhost:3000/dev/contracts](http://localhost:3000/dev/contract)
 
 `GET get contract by id -`
-[http://localhost:3000/dev/contract/{id}](http://localhost:3000/dev/contract/{id})
+[http://localhost:3000/dev/contracts/{id}](http://localhost:3000/dev/contract/{id})
 
 ## Run Unit Tests
 
