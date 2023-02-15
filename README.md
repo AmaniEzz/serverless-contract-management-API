@@ -1,6 +1,9 @@
 # Serverles Contract Managment API
 
-Simple Contract Managment serverless application
+This project is a Serverless Contract Management API built with Node.js, TypeScript, Serverless Framework, AWS Lambda, and DynamoDB. The API allows users to create and read contracts in a secure way using JWT Authorization to ensures that only authorized users can access the Lambda functions.
+The project includes unit tests with Mocha and Chai to ensure code reliability and correctness.
+
+The Serverless Framework handles all server management and scaling.
 
 ## Installation
 
