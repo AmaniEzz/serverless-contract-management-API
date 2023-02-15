@@ -4,7 +4,7 @@ import {
   hashKey,
 } from "@aws/dynamodb-data-mapper-annotations";
 import { nanoid } from "nanoid";
-import * as bcrypt from "bcrypt-ts";
+import { compare, hash } from "bcrypt-ts";
 
 @table("user_table")
 export class User {
@@ -27,11 +27,11 @@ export class User {
   createdAt?: Date;
 
   async hashPassword() {
-    this.password = await bcrypt.hash(this.password, 8);
+    this.password = await hash(this.password, 8);
   }
 
   async comparePassword(password: string): Promise<boolean> {
-    return await bcrypt.compare(password, this.password);
+    return await compare(password, this.password);
   }
 
   setEmail() {
