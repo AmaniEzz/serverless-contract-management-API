@@ -1,8 +1,9 @@
 # Serverles Contract Managment API
 
-This project is a Serverless Contract Management API built with Node.js, TypeScript, Serverless Framework, AWS Lambda, and DynamoDB. The API allows users to create and read contracts in a secure way using JWT Authorization to ensures that only authorized users can access the Lambda functions.
+This project is a Sample Serverless Contract Management API built with Node.js, TypeScript, Serverless Framework, AWS Lambda, and DynamoDB. 
+The API allows users to create and read contracts in a secure way using JWT Authorization to ensures that only authorized users can access the Lambda functions.
 
-The main purpose of this project is to demonstrate how to create and secure a Serverless API using API Gateway Lambda authorizer.
+The main purpose of this sample project is to demonstrate how to create a secure Serverless API using API Gateway Lambda authorizer.
 A **Lambda authorizer** is an API Gateway feature that uses a Lambda function to control access to your API.
 In this project I used `token-based Lambda authorizer` which receives the caller's identity in a bearer JSON Web Token (JWT). 
 
